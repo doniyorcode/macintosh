@@ -1,0 +1,277 @@
+@import 'fonts.css';
+
+/* Root start */
+
+:root {
+    --mt100: 'Montserrat Thin';
+    --mm500: 'Montserrat Medium';
+    --mpro400: 'Myriadpro Regular';
+    --nr400: 'Nunitosans Regular';
+    --wr400: 'Worksans Regular';
+    --black: #191919;
+    --green: #007d2f;
+    --rb500: 'Roboto Medium';
+}
+
+
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a{
+    margin: 0;
+}
+
+/* Root end */
+/* Header start */
+
+.header__logo {
+    margin-top: 17px;
+    margin-bottom: 18px;
+}
+
+.nav__ul {
+    margin-top: 45px;
+}
+
+.header__nav-link {
+    font-family: var(--mm500);
+    font-size: 12px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-left: 33px;
+    transition: color 300ms;
+    cursor: pointer;
+}
+.header__nav-link:hover {
+    color: var(--green);
+}
+
+.header__content {
+    background: var(--green);
+}
+
+.header__content-title {
+    font-family: var(--mm500);
+    font-size: 30px;
+    color: black;
+    line-height: 28px;
+    margin-top: 110px;
+    margin-bottom: 33px;
+}
+
+.header__content-text {
+    font-family: var(--rb500);
+    color: #fefefe;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+/* Header end */
+/* **************************************** */
+/* Main start */
+
+.main__images-img {
+    width: 25%;
+    position: relative;
+}
+
+.main__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.image__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    background: rgba(0, 128, 0, 0.30);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.image__link:hover {
+    opacity: 1;
+    color: white;
+}
+
+/* Main end */
+/* ****************************** */
+/* Footer start */
+
+.footer {
+    background: black;
+}
+
+.footer__first-title {
+    font-size: 18px;
+    font-family: var(--mm500);
+    color: white;
+    line-height: 13px;
+    margin-top: 100px;
+    margin-bottom: 28px;
+}
+
+.footer__first-text:first-of-type {
+    font-family: var(--mpro400);
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer__first-text:last-of-type {
+    font-family: var(--mpro400);
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 100px;
+}
+
+.footer__second-text:first-of-type {
+    font-family: var(--nr400);
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer__second-text:last-of-type {
+    font-family: var(--wr400);
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer__item-link {
+    font-family: var(--nr400);
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+/* Footer end */
+/* ********************************* */
+/* Media start */
+
+/* Footer media */
+
+@media (max-width:992px) {
+    .footer__item-link {
+        font-size: 10px;
+    }
+    .footer__first-title {
+        font-size: 14px;
+    }
+    .footer__first-text:first-of-type {
+        font-size: 11px;
+    }
+    .footer__first-text:last-of-type {
+        font-size: 13px;
+    }
+    .footer__second-text:first-of-type {
+        font-size: 11px;
+    }
+    .footer__second-text:last-of-type {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer__first-title {
+        font-size: 11px;
+    }
+    .footer__first-text:first-of-type {
+        font-size: 8px;
+    }
+    .footer__first-text:last-of-type {
+        font-size: 9px
+    }
+    .footer__second-text:first-of-type {
+        font-size: 8px;
+    }
+    .footer__second-text:last-of-type {
+        font-size: 9px;
+    }
+    .footer__item-link {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:585px) {
+    .footer__first-title {
+        font-size: 6px;
+    }
+    .footer__first-text:first-of-type {
+        font-size: 6px;
+    }
+    .footer__first-text:last-of-type {
+        font-size: 7px
+    }
+    .footer__second-text:first-of-type {
+        font-size: 6px;
+    }
+    .footer__second-text:last-of-type {
+        font-size: 7px;
+    }
+    .footer__item-link {
+        font-size: 5px;
+    }
+}
+
+@media (max-width:350px) {
+    .footer__first-text:first-of-type {
+        font-size: 4px;
+    }
+}
+
+/* Footer media */
+
+@media (max-width:650px) {
+    .header__content-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    .header__content-title {
+        margin-top: 80px;
+    }
+    .header__content-text {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width:400px) {
+    .header__content-title {
+        font-size: 20px;
+        margin-top: 70px;
+    }
+    .header__content-text {
+        font-size: 9px;
+        line-height: 15px;
+        margin-bottom: 50px;
+    }
+}
